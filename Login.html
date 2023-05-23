@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-box">
+            <h1>Login</h1>
+            <form id="loginForm" onsubmit="login(event)"  class="row g-3 needs-validation" novalidate>
+              
+                <input class="input-feild" placeholder="Enter Email" type="email" id="email" required>
+                <span id="usernameError2" class="error" style="color: red;"></span>
+
+                <input class="input-feild" placeholder="Enter Password" type="password" id="password" required>
+                <span id="usernameError3" class="error" style="color: red;"></span>
+
+                <p>Forget Password <a href="#">Click Here!</a></p>
+                <button type="submit"> Login</button>
+                <p style="text-align: center; margin-top: 10px;">Didn't have any account  <a href="signup.html">Sign up!</a></p>
+            </form>
+        </div>
+    </div>
+  <script src="login.js"></script>
+</body>
+</html>

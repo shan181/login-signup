@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Login Page</title>
+  <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap-grid.css">
+  <link rel="stylesheet" type="text/css" href="login.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>Sign Up</h1>
+      <form id="SignupForm" onsubmit="Signup(event)" class="row g-3 needs-validation" novalidate>
+
+
+        <input class="input-feild" placeholder="Enter Full Name" type="Name" id="Name" required>
+        <span id="usernameError" class="error" style="color: red;"></span>
+
+        <input class="input-feild" placeholder="Enter Email" type="email" id="email" required>
+        <span id="usernameError2" class="error" style="color: red;"></span>
+
+        <input class="input-feild" placeholder="Enter Password" type="password" id="password" required>
+        <span id="usernameError3" class="error" style="color: red;"></span>
+
+        <input class="input-feild" placeholder="Confirm Password" type="password" id="cpassword" required>
+        <span id="usernameError4" class="error" style="color: red;"></span>
+
+        <button type="submit"><a href="Login.html"></a> Sign up</button>
+        <p style="text-align: center; margin-top: 10px;">Already have an account <a href="Login.html">Login!</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="signup.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
